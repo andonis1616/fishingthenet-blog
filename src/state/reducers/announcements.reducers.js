@@ -1,7 +1,7 @@
-import { FETCH_ANNOUNCEMENTS } from '../actions/announcements.action';
+import { FETCH_ANNOUNCEMENTS } from "../actions/announcements.action";
 
 const initialState = {
-  announcements: 'ceva acolo',
+  announcements: [],
 };
 
 export const announcementsReducer = (state = { ...initialState }, action) => {
