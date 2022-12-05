@@ -6,59 +6,361 @@ import { AnnouncementsStyle } from "./Announcements.style";
 
 const MOCK_DATA = [
   {
-    title: "1 sunt",
+    id: 1,
+    title: "1 Lorem ipsum dolor sit amet, consectetur adipiscing",
+    content: `
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in elementum tellus. Mauris tincidunt purus id libero varius, id pellentesque leo bibendum. In suscipit urna eget turpis fermentum, sit amet finibus neque commodo.
+    </p>
+    <p>
+      Phasellus dolor nulla, malesuada a eros vitae, pulvinar facilisis mi. Mauris rhoncus rutrum vestibulum. Pellentesque vestibulum ligula eget enim tristique, id sagittis neque commodo. Phasellus in elit velit. Etiam sodales dictum luctus.
+    </p>
+    <p>
+      Nullam aliquam ultricies porta. Etiam a aliquam odio. Duis fermentum, nisi at ultricies aliquam, neque magna bibendum eros, quis feugiat odio enim sit amet leo. Aliquam cursus dolor at lacus consequat ornare non sit amet risus. Nulla facilisi. Curabitur vehicula libero at interdum tincidunt. Quisque vitae bibendum libero. Integer vitae tristique nunc. Duis rutrum lorem eget dapibus vulputate.
+    </p>
+    <p>
+      Donec sed mauris erat. Nam lobortis hendrerit neque. Nulla facilisi. Nulla tellus lorem, imperdiet vitae fringilla vel, lobortis et mi. Aliquam in accumsan arcu, quis tincidunt neque. Sed ligula lectus, posuere sed augue ac, mollis laoreet nulla. Praesent et tempor nibh.
+    </p>
+    <p>
+      In ullamcorper neque et enim tincidunt mollis. Aliquam sed sapien quis massa gravida tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse quam arcu, efficitur et nibh ac, convallis fringilla augue.
+    <p>
+    `,
   },
   {
-    title: "2 ",
+    id: 2,
+    title: "2 Lorem ipsum dolor sit amet, consectetur adipiscing",
+    content: `
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in elementum tellus. Mauris tincidunt purus id libero varius, id pellentesque leo bibendum. In suscipit urna eget turpis fermentum, sit amet finibus neque commodo.
+    </p>
+    <p>
+      Phasellus dolor nulla, malesuada a eros vitae, pulvinar facilisis mi. Mauris rhoncus rutrum vestibulum. Pellentesque vestibulum ligula eget enim tristique, id sagittis neque commodo. Phasellus in elit velit. Etiam sodales dictum luctus.
+    </p>
+    <p>
+      Nullam aliquam ultricies porta. Etiam a aliquam odio. Duis fermentum, nisi at ultricies aliquam, neque magna bibendum eros, quis feugiat odio enim sit amet leo. Aliquam cursus dolor at lacus consequat ornare non sit amet risus. Nulla facilisi. Curabitur vehicula libero at interdum tincidunt. Quisque vitae bibendum libero. Integer vitae tristique nunc. Duis rutrum lorem eget dapibus vulputate.
+    </p>
+    <p>
+      Donec sed mauris erat. Nam lobortis hendrerit neque. Nulla facilisi. Nulla tellus lorem, imperdiet vitae fringilla vel, lobortis et mi. Aliquam in accumsan arcu, quis tincidunt neque. Sed ligula lectus, posuere sed augue ac, mollis laoreet nulla. Praesent et tempor nibh.
+    </p>
+    <p>
+      In ullamcorper neque et enim tincidunt mollis. Aliquam sed sapien quis massa gravida tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse quam arcu, efficitur et nibh ac, convallis fringilla augue.
+    <p>
+    `,
   },
   {
-    title: "3 sunt",
+    id: 3,
+    title: "3 Lorem ipsum dolor sit amet, consectetur adipiscing",
+    content: `
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in elementum tellus. Mauris tincidunt purus id libero varius, id pellentesque leo bibendum. In suscipit urna eget turpis fermentum, sit amet finibus neque commodo.
+    </p>
+    <p>
+      Phasellus dolor nulla, malesuada a eros vitae, pulvinar facilisis mi. Mauris rhoncus rutrum vestibulum. Pellentesque vestibulum ligula eget enim tristique, id sagittis neque commodo. Phasellus in elit velit. Etiam sodales dictum luctus.
+    </p>
+    <p>
+      Nullam aliquam ultricies porta. Etiam a aliquam odio. Duis fermentum, nisi at ultricies aliquam, neque magna bibendum eros, quis feugiat odio enim sit amet leo. Aliquam cursus dolor at lacus consequat ornare non sit amet risus. Nulla facilisi. Curabitur vehicula libero at interdum tincidunt. Quisque vitae bibendum libero. Integer vitae tristique nunc. Duis rutrum lorem eget dapibus vulputate.
+    </p>
+    <p>
+      Donec sed mauris erat. Nam lobortis hendrerit neque. Nulla facilisi. Nulla tellus lorem, imperdiet vitae fringilla vel, lobortis et mi. Aliquam in accumsan arcu, quis tincidunt neque. Sed ligula lectus, posuere sed augue ac, mollis laoreet nulla. Praesent et tempor nibh.
+    </p>
+    <p>
+      In ullamcorper neque et enim tincidunt mollis. Aliquam sed sapien quis massa gravida tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse quam arcu, efficitur et nibh ac, convallis fringilla augue.
+    <p>
+    `,
   },
   {
-    title: "4 ",
+    id: 4,
+    title: "4 Lorem ipsum dolor sit amet, consectetur adipiscing",
+    content: `
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in elementum tellus. Mauris tincidunt purus id libero varius, id pellentesque leo bibendum. In suscipit urna eget turpis fermentum, sit amet finibus neque commodo.
+    </p>
+    <p>
+      Phasellus dolor nulla, malesuada a eros vitae, pulvinar facilisis mi. Mauris rhoncus rutrum vestibulum. Pellentesque vestibulum ligula eget enim tristique, id sagittis neque commodo. Phasellus in elit velit. Etiam sodales dictum luctus.
+    </p>
+    <p>
+      Nullam aliquam ultricies porta. Etiam a aliquam odio. Duis fermentum, nisi at ultricies aliquam, neque magna bibendum eros, quis feugiat odio enim sit amet leo. Aliquam cursus dolor at lacus consequat ornare non sit amet risus. Nulla facilisi. Curabitur vehicula libero at interdum tincidunt. Quisque vitae bibendum libero. Integer vitae tristique nunc. Duis rutrum lorem eget dapibus vulputate.
+    </p>
+    <p>
+      Donec sed mauris erat. Nam lobortis hendrerit neque. Nulla facilisi. Nulla tellus lorem, imperdiet vitae fringilla vel, lobortis et mi. Aliquam in accumsan arcu, quis tincidunt neque. Sed ligula lectus, posuere sed augue ac, mollis laoreet nulla. Praesent et tempor nibh.
+    </p>
+    <p>
+      In ullamcorper neque et enim tincidunt mollis. Aliquam sed sapien quis massa gravida tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse quam arcu, efficitur et nibh ac, convallis fringilla augue.
+    <p>
+    `,
   },
   {
-    title: "5 ",
+    id: 5,
+    title: "5 Lorem ipsum dolor sit amet, consectetur adipiscing",
+    content: `
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in elementum tellus. Mauris tincidunt purus id libero varius, id pellentesque leo bibendum. In suscipit urna eget turpis fermentum, sit amet finibus neque commodo.
+    </p>
+    <p>
+      Phasellus dolor nulla, malesuada a eros vitae, pulvinar facilisis mi. Mauris rhoncus rutrum vestibulum. Pellentesque vestibulum ligula eget enim tristique, id sagittis neque commodo. Phasellus in elit velit. Etiam sodales dictum luctus.
+    </p>
+    <p>
+      Nullam aliquam ultricies porta. Etiam a aliquam odio. Duis fermentum, nisi at ultricies aliquam, neque magna bibendum eros, quis feugiat odio enim sit amet leo. Aliquam cursus dolor at lacus consequat ornare non sit amet risus. Nulla facilisi. Curabitur vehicula libero at interdum tincidunt. Quisque vitae bibendum libero. Integer vitae tristique nunc. Duis rutrum lorem eget dapibus vulputate.
+    </p>
+    <p>
+      Donec sed mauris erat. Nam lobortis hendrerit neque. Nulla facilisi. Nulla tellus lorem, imperdiet vitae fringilla vel, lobortis et mi. Aliquam in accumsan arcu, quis tincidunt neque. Sed ligula lectus, posuere sed augue ac, mollis laoreet nulla. Praesent et tempor nibh.
+    </p>
+    <p>
+      In ullamcorper neque et enim tincidunt mollis. Aliquam sed sapien quis massa gravida tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse quam arcu, efficitur et nibh ac, convallis fringilla augue.
+    <p>
+    `,
   },
   {
-    title: "6 ",
+    id: 6,
+    title: "6 Lorem ipsum dolor sit amet, consectetur adipiscing",
+    content: `
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in elementum tellus. Mauris tincidunt purus id libero varius, id pellentesque leo bibendum. In suscipit urna eget turpis fermentum, sit amet finibus neque commodo.
+    </p>
+    <p>
+      Phasellus dolor nulla, malesuada a eros vitae, pulvinar facilisis mi. Mauris rhoncus rutrum vestibulum. Pellentesque vestibulum ligula eget enim tristique, id sagittis neque commodo. Phasellus in elit velit. Etiam sodales dictum luctus.
+    </p>
+    <p>
+      Nullam aliquam ultricies porta. Etiam a aliquam odio. Duis fermentum, nisi at ultricies aliquam, neque magna bibendum eros, quis feugiat odio enim sit amet leo. Aliquam cursus dolor at lacus consequat ornare non sit amet risus. Nulla facilisi. Curabitur vehicula libero at interdum tincidunt. Quisque vitae bibendum libero. Integer vitae tristique nunc. Duis rutrum lorem eget dapibus vulputate.
+    </p>
+    <p>
+      Donec sed mauris erat. Nam lobortis hendrerit neque. Nulla facilisi. Nulla tellus lorem, imperdiet vitae fringilla vel, lobortis et mi. Aliquam in accumsan arcu, quis tincidunt neque. Sed ligula lectus, posuere sed augue ac, mollis laoreet nulla. Praesent et tempor nibh.
+    </p>
+    <p>
+      In ullamcorper neque et enim tincidunt mollis. Aliquam sed sapien quis massa gravida tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse quam arcu, efficitur et nibh ac, convallis fringilla augue.
+    <p>
+    `,
   },
   {
+    id: 7,
     title: "7 sunt",
+    content: `
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in elementum tellus. Mauris tincidunt purus id libero varius, id pellentesque leo bibendum. In suscipit urna eget turpis fermentum, sit amet finibus neque commodo.
+    </p>
+    <p>
+      Phasellus dolor nulla, malesuada a eros vitae, pulvinar facilisis mi. Mauris rhoncus rutrum vestibulum. Pellentesque vestibulum ligula eget enim tristique, id sagittis neque commodo. Phasellus in elit velit. Etiam sodales dictum luctus.
+    </p>
+    <p>
+      Nullam aliquam ultricies porta. Etiam a aliquam odio. Duis fermentum, nisi at ultricies aliquam, neque magna bibendum eros, quis feugiat odio enim sit amet leo. Aliquam cursus dolor at lacus consequat ornare non sit amet risus. Nulla facilisi. Curabitur vehicula libero at interdum tincidunt. Quisque vitae bibendum libero. Integer vitae tristique nunc. Duis rutrum lorem eget dapibus vulputate.
+    </p>
+    <p>
+      Donec sed mauris erat. Nam lobortis hendrerit neque. Nulla facilisi. Nulla tellus lorem, imperdiet vitae fringilla vel, lobortis et mi. Aliquam in accumsan arcu, quis tincidunt neque. Sed ligula lectus, posuere sed augue ac, mollis laoreet nulla. Praesent et tempor nibh.
+    </p>
+    <p>
+      In ullamcorper neque et enim tincidunt mollis. Aliquam sed sapien quis massa gravida tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse quam arcu, efficitur et nibh ac, convallis fringilla augue.
+    <p>
+    `,
   },
   {
+    id: 8,
     title: "8 sunt",
+    content: `
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in elementum tellus. Mauris tincidunt purus id libero varius, id pellentesque leo bibendum. In suscipit urna eget turpis fermentum, sit amet finibus neque commodo.
+    </p>
+    <p>
+      Phasellus dolor nulla, malesuada a eros vitae, pulvinar facilisis mi. Mauris rhoncus rutrum vestibulum. Pellentesque vestibulum ligula eget enim tristique, id sagittis neque commodo. Phasellus in elit velit. Etiam sodales dictum luctus.
+    </p>
+    <p>
+      Nullam aliquam ultricies porta. Etiam a aliquam odio. Duis fermentum, nisi at ultricies aliquam, neque magna bibendum eros, quis feugiat odio enim sit amet leo. Aliquam cursus dolor at lacus consequat ornare non sit amet risus. Nulla facilisi. Curabitur vehicula libero at interdum tincidunt. Quisque vitae bibendum libero. Integer vitae tristique nunc. Duis rutrum lorem eget dapibus vulputate.
+    </p>
+    <p>
+      Donec sed mauris erat. Nam lobortis hendrerit neque. Nulla facilisi. Nulla tellus lorem, imperdiet vitae fringilla vel, lobortis et mi. Aliquam in accumsan arcu, quis tincidunt neque. Sed ligula lectus, posuere sed augue ac, mollis laoreet nulla. Praesent et tempor nibh.
+    </p>
+    <p>
+      In ullamcorper neque et enim tincidunt mollis. Aliquam sed sapien quis massa gravida tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse quam arcu, efficitur et nibh ac, convallis fringilla augue.
+    <p>
+    `,
   },
   {
+    id: 9,
     title: "9 sunt",
+    content: `
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in elementum tellus. Mauris tincidunt purus id libero varius, id pellentesque leo bibendum. In suscipit urna eget turpis fermentum, sit amet finibus neque commodo.
+    </p>
+    <p>
+      Phasellus dolor nulla, malesuada a eros vitae, pulvinar facilisis mi. Mauris rhoncus rutrum vestibulum. Pellentesque vestibulum ligula eget enim tristique, id sagittis neque commodo. Phasellus in elit velit. Etiam sodales dictum luctus.
+    </p>
+    <p>
+      Nullam aliquam ultricies porta. Etiam a aliquam odio. Duis fermentum, nisi at ultricies aliquam, neque magna bibendum eros, quis feugiat odio enim sit amet leo. Aliquam cursus dolor at lacus consequat ornare non sit amet risus. Nulla facilisi. Curabitur vehicula libero at interdum tincidunt. Quisque vitae bibendum libero. Integer vitae tristique nunc. Duis rutrum lorem eget dapibus vulputate.
+    </p>
+    <p>
+      Donec sed mauris erat. Nam lobortis hendrerit neque. Nulla facilisi. Nulla tellus lorem, imperdiet vitae fringilla vel, lobortis et mi. Aliquam in accumsan arcu, quis tincidunt neque. Sed ligula lectus, posuere sed augue ac, mollis laoreet nulla. Praesent et tempor nibh.
+    </p>
+    <p>
+      In ullamcorper neque et enim tincidunt mollis. Aliquam sed sapien quis massa gravida tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse quam arcu, efficitur et nibh ac, convallis fringilla augue.
+    <p>
+    `,
   },
   {
+    id: 10,
     title: "10 sunt",
+    content: `
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in elementum tellus. Mauris tincidunt purus id libero varius, id pellentesque leo bibendum. In suscipit urna eget turpis fermentum, sit amet finibus neque commodo.
+    </p>
+    <p>
+      Phasellus dolor nulla, malesuada a eros vitae, pulvinar facilisis mi. Mauris rhoncus rutrum vestibulum. Pellentesque vestibulum ligula eget enim tristique, id sagittis neque commodo. Phasellus in elit velit. Etiam sodales dictum luctus.
+    </p>
+    <p>
+      Nullam aliquam ultricies porta. Etiam a aliquam odio. Duis fermentum, nisi at ultricies aliquam, neque magna bibendum eros, quis feugiat odio enim sit amet leo. Aliquam cursus dolor at lacus consequat ornare non sit amet risus. Nulla facilisi. Curabitur vehicula libero at interdum tincidunt. Quisque vitae bibendum libero. Integer vitae tristique nunc. Duis rutrum lorem eget dapibus vulputate.
+    </p>
+    <p>
+      Donec sed mauris erat. Nam lobortis hendrerit neque. Nulla facilisi. Nulla tellus lorem, imperdiet vitae fringilla vel, lobortis et mi. Aliquam in accumsan arcu, quis tincidunt neque. Sed ligula lectus, posuere sed augue ac, mollis laoreet nulla. Praesent et tempor nibh.
+    </p>
+    <p>
+      In ullamcorper neque et enim tincidunt mollis. Aliquam sed sapien quis massa gravida tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse quam arcu, efficitur et nibh ac, convallis fringilla augue.
+    <p>
+    `,
   },
   {
+    id: 11,
     title: "11 sunt",
+    content: `
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in elementum tellus. Mauris tincidunt purus id libero varius, id pellentesque leo bibendum. In suscipit urna eget turpis fermentum, sit amet finibus neque commodo.
+    </p>
+    <p>
+      Phasellus dolor nulla, malesuada a eros vitae, pulvinar facilisis mi. Mauris rhoncus rutrum vestibulum. Pellentesque vestibulum ligula eget enim tristique, id sagittis neque commodo. Phasellus in elit velit. Etiam sodales dictum luctus.
+    </p>
+    <p>
+      Nullam aliquam ultricies porta. Etiam a aliquam odio. Duis fermentum, nisi at ultricies aliquam, neque magna bibendum eros, quis feugiat odio enim sit amet leo. Aliquam cursus dolor at lacus consequat ornare non sit amet risus. Nulla facilisi. Curabitur vehicula libero at interdum tincidunt. Quisque vitae bibendum libero. Integer vitae tristique nunc. Duis rutrum lorem eget dapibus vulputate.
+    </p>
+    <p>
+      Donec sed mauris erat. Nam lobortis hendrerit neque. Nulla facilisi. Nulla tellus lorem, imperdiet vitae fringilla vel, lobortis et mi. Aliquam in accumsan arcu, quis tincidunt neque. Sed ligula lectus, posuere sed augue ac, mollis laoreet nulla. Praesent et tempor nibh.
+    </p>
+    <p>
+      In ullamcorper neque et enim tincidunt mollis. Aliquam sed sapien quis massa gravida tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse quam arcu, efficitur et nibh ac, convallis fringilla augue.
+    <p>
+    `,
   },
   {
+    id: 12,
     title: "12 sunt",
+    content: `
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in elementum tellus. Mauris tincidunt purus id libero varius, id pellentesque leo bibendum. In suscipit urna eget turpis fermentum, sit amet finibus neque commodo.
+    </p>
+    <p>
+      Phasellus dolor nulla, malesuada a eros vitae, pulvinar facilisis mi. Mauris rhoncus rutrum vestibulum. Pellentesque vestibulum ligula eget enim tristique, id sagittis neque commodo. Phasellus in elit velit. Etiam sodales dictum luctus.
+    </p>
+    <p>
+      Nullam aliquam ultricies porta. Etiam a aliquam odio. Duis fermentum, nisi at ultricies aliquam, neque magna bibendum eros, quis feugiat odio enim sit amet leo. Aliquam cursus dolor at lacus consequat ornare non sit amet risus. Nulla facilisi. Curabitur vehicula libero at interdum tincidunt. Quisque vitae bibendum libero. Integer vitae tristique nunc. Duis rutrum lorem eget dapibus vulputate.
+    </p>
+    <p>
+      Donec sed mauris erat. Nam lobortis hendrerit neque. Nulla facilisi. Nulla tellus lorem, imperdiet vitae fringilla vel, lobortis et mi. Aliquam in accumsan arcu, quis tincidunt neque. Sed ligula lectus, posuere sed augue ac, mollis laoreet nulla. Praesent et tempor nibh.
+    </p>
+    <p>
+      In ullamcorper neque et enim tincidunt mollis. Aliquam sed sapien quis massa gravida tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse quam arcu, efficitur et nibh ac, convallis fringilla augue.
+    <p>
+    `,
   },
-
   {
+    id: 13,
     title: "13 sunt",
+    content: `
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in elementum tellus. Mauris tincidunt purus id libero varius, id pellentesque leo bibendum. In suscipit urna eget turpis fermentum, sit amet finibus neque commodo.
+    </p>
+    <p>
+      Phasellus dolor nulla, malesuada a eros vitae, pulvinar facilisis mi. Mauris rhoncus rutrum vestibulum. Pellentesque vestibulum ligula eget enim tristique, id sagittis neque commodo. Phasellus in elit velit. Etiam sodales dictum luctus.
+    </p>
+    <p>
+      Nullam aliquam ultricies porta. Etiam a aliquam odio. Duis fermentum, nisi at ultricies aliquam, neque magna bibendum eros, quis feugiat odio enim sit amet leo. Aliquam cursus dolor at lacus consequat ornare non sit amet risus. Nulla facilisi. Curabitur vehicula libero at interdum tincidunt. Quisque vitae bibendum libero. Integer vitae tristique nunc. Duis rutrum lorem eget dapibus vulputate.
+    </p>
+    <p>
+      Donec sed mauris erat. Nam lobortis hendrerit neque. Nulla facilisi. Nulla tellus lorem, imperdiet vitae fringilla vel, lobortis et mi. Aliquam in accumsan arcu, quis tincidunt neque. Sed ligula lectus, posuere sed augue ac, mollis laoreet nulla. Praesent et tempor nibh.
+    </p>
+    <p>
+      In ullamcorper neque et enim tincidunt mollis. Aliquam sed sapien quis massa gravida tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse quam arcu, efficitur et nibh ac, convallis fringilla augue.
+    <p>
+    `,
   },
-
   {
+    id: 14,
     title: "14 sunt",
+    content: `
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in elementum tellus. Mauris tincidunt purus id libero varius, id pellentesque leo bibendum. In suscipit urna eget turpis fermentum, sit amet finibus neque commodo.
+    </p>
+    <p>
+      Phasellus dolor nulla, malesuada a eros vitae, pulvinar facilisis mi. Mauris rhoncus rutrum vestibulum. Pellentesque vestibulum ligula eget enim tristique, id sagittis neque commodo. Phasellus in elit velit. Etiam sodales dictum luctus.
+    </p>
+    <p>
+      Nullam aliquam ultricies porta. Etiam a aliquam odio. Duis fermentum, nisi at ultricies aliquam, neque magna bibendum eros, quis feugiat odio enim sit amet leo. Aliquam cursus dolor at lacus consequat ornare non sit amet risus. Nulla facilisi. Curabitur vehicula libero at interdum tincidunt. Quisque vitae bibendum libero. Integer vitae tristique nunc. Duis rutrum lorem eget dapibus vulputate.
+    </p>
+    <p>
+      Donec sed mauris erat. Nam lobortis hendrerit neque. Nulla facilisi. Nulla tellus lorem, imperdiet vitae fringilla vel, lobortis et mi. Aliquam in accumsan arcu, quis tincidunt neque. Sed ligula lectus, posuere sed augue ac, mollis laoreet nulla. Praesent et tempor nibh.
+    </p>
+    <p>
+      In ullamcorper neque et enim tincidunt mollis. Aliquam sed sapien quis massa gravida tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse quam arcu, efficitur et nibh ac, convallis fringilla augue.
+    <p>
+    `,
   },
-
   {
+    id: 15,
     title: "15 sunt",
+    content: `
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in elementum tellus. Mauris tincidunt purus id libero varius, id pellentesque leo bibendum. In suscipit urna eget turpis fermentum, sit amet finibus neque commodo.
+    </p>
+    <p>
+      Phasellus dolor nulla, malesuada a eros vitae, pulvinar facilisis mi. Mauris rhoncus rutrum vestibulum. Pellentesque vestibulum ligula eget enim tristique, id sagittis neque commodo. Phasellus in elit velit. Etiam sodales dictum luctus.
+    </p>
+    <p>
+      Nullam aliquam ultricies porta. Etiam a aliquam odio. Duis fermentum, nisi at ultricies aliquam, neque magna bibendum eros, quis feugiat odio enim sit amet leo. Aliquam cursus dolor at lacus consequat ornare non sit amet risus. Nulla facilisi. Curabitur vehicula libero at interdum tincidunt. Quisque vitae bibendum libero. Integer vitae tristique nunc. Duis rutrum lorem eget dapibus vulputate.
+    </p>
+    <p>
+      Donec sed mauris erat. Nam lobortis hendrerit neque. Nulla facilisi. Nulla tellus lorem, imperdiet vitae fringilla vel, lobortis et mi. Aliquam in accumsan arcu, quis tincidunt neque. Sed ligula lectus, posuere sed augue ac, mollis laoreet nulla. Praesent et tempor nibh.
+    </p>
+    <p>
+      In ullamcorper neque et enim tincidunt mollis. Aliquam sed sapien quis massa gravida tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse quam arcu, efficitur et nibh ac, convallis fringilla augue.
+    <p>
+    `,
   },
-
   {
+    id: 16,
     title: "16 sunt",
+    content: `
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in elementum tellus. Mauris tincidunt purus id libero varius, id pellentesque leo bibendum. In suscipit urna eget turpis fermentum, sit amet finibus neque commodo.
+    </p>
+    <p>
+      Phasellus dolor nulla, malesuada a eros vitae, pulvinar facilisis mi. Mauris rhoncus rutrum vestibulum. Pellentesque vestibulum ligula eget enim tristique, id sagittis neque commodo. Phasellus in elit velit. Etiam sodales dictum luctus.
+    </p>
+    <p>
+      Nullam aliquam ultricies porta. Etiam a aliquam odio. Duis fermentum, nisi at ultricies aliquam, neque magna bibendum eros, quis feugiat odio enim sit amet leo. Aliquam cursus dolor at lacus consequat ornare non sit amet risus. Nulla facilisi. Curabitur vehicula libero at interdum tincidunt. Quisque vitae bibendum libero. Integer vitae tristique nunc. Duis rutrum lorem eget dapibus vulputate.
+    </p>
+    <p>
+      Donec sed mauris erat. Nam lobortis hendrerit neque. Nulla facilisi. Nulla tellus lorem, imperdiet vitae fringilla vel, lobortis et mi. Aliquam in accumsan arcu, quis tincidunt neque. Sed ligula lectus, posuere sed augue ac, mollis laoreet nulla. Praesent et tempor nibh.
+    </p>
+    <p>
+      In ullamcorper neque et enim tincidunt mollis. Aliquam sed sapien quis massa gravida tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse quam arcu, efficitur et nibh ac, convallis fringilla augue.
+    <p>
+    `,
   },
   {
+    id: 17,
     title: "17 sunt",
+    content: `
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in elementum tellus. Mauris tincidunt purus id libero varius, id pellentesque leo bibendum. In suscipit urna eget turpis fermentum, sit amet finibus neque commodo.
+    </p>
+    <p>
+      Phasellus dolor nulla, malesuada a eros vitae, pulvinar facilisis mi. Mauris rhoncus rutrum vestibulum. Pellentesque vestibulum ligula eget enim tristique, id sagittis neque commodo. Phasellus in elit velit. Etiam sodales dictum luctus.
+    </p>
+    <p>
+      Nullam aliquam ultricies porta. Etiam a aliquam odio. Duis fermentum, nisi at ultricies aliquam, neque magna bibendum eros, quis feugiat odio enim sit amet leo. Aliquam cursus dolor at lacus consequat ornare non sit amet risus. Nulla facilisi. Curabitur vehicula libero at interdum tincidunt. Quisque vitae bibendum libero. Integer vitae tristique nunc. Duis rutrum lorem eget dapibus vulputate.
+    </p>
+    <p>
+      Donec sed mauris erat. Nam lobortis hendrerit neque. Nulla facilisi. Nulla tellus lorem, imperdiet vitae fringilla vel, lobortis et mi. Aliquam in accumsan arcu, quis tincidunt neque. Sed ligula lectus, posuere sed augue ac, mollis laoreet nulla. Praesent et tempor nibh.
+    </p>
+    <p>
+      In ullamcorper neque et enim tincidunt mollis. Aliquam sed sapien quis massa gravida tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse quam arcu, efficitur et nibh ac, convallis fringilla augue.
+    <p>
+    `,
   },
 ];
 
@@ -157,7 +459,7 @@ function Announcements({
 
       <div className="announcements-container">
         {currentItems.map((item, index) => (
-          <Link key={index} to={`/announcements/${index}`}>
+          <Link key={index} to={`/announcements/${item.id}`} state={item}>
             <div className="announcements-card">
               <div className="announcements-card-image">
                 <img
