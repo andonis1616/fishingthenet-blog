@@ -14,26 +14,26 @@ function AboutUs({ ...props }) {
             <div className="text">Nadia Grigoras Designer</div>
           </div>
           <div className="team-top-group">
-            <img src="/nadia.png" alt="nadia" />
-            <div className="text">Nadia Grigoras Designer</div>
+            <img src="/lacra.png" alt="nadia" />
+            <div className="text">Lacramioara Chirieac</div>
           </div>
           <div className="team-top-group">
-            <img src="/nadia.png" alt="nadia" />
-            <div className="text">Nadia Grigoras Designer</div>
+            <img src="/andrei.png" alt="nadia" />
+            <div className="text">Razvan Axinia</div>
           </div>
         </div>
         <div className="team-bottom">
           <div className="team-top-group">
-            <img src="/nadia.png" alt="nadia" />
-            <div className="text">Nadia Grigoras Designer</div>
+            <img src="/razvan.png" alt="nadia" />
+            <div className="text">Andrei Cuzenco</div>
           </div>
           <div className="team-top-group">
-            <img src="/nadia.png" alt="nadia" />
-            <div className="text">Nadia Grigoras Designer</div>
+            <img src="/vali.png" alt="nadia" />
+            <div className="text">Valentin Boghean</div>
           </div>
           <div className="team-top-group">
-            <img src="/nadia.png" alt="nadia" />
-            <div className="text">Nadia Grigoras Designer</div>
+            <img src="/sebastian.png" alt="nadia" />
+            <div className="text">Murarescu Sebastian-Marian</div>
           </div>
           <div className="empty"></div>
         </div>
@@ -44,11 +44,23 @@ function AboutUs({ ...props }) {
       </div>
 
       <p className="text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-        voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        HOW CAN YOU CONTACT US ABOUT THIS NOTICE? <br></br>
+        If you have questions or comments about this notice, you may email us at
+        <br></br>
+        Fish.the.net@yahoo.com or by post to:
+        <br></br>
+        Fishing the net
+        <br></br>
+        Fishy street
+        <br></br>
+        Suceava, Romania 727602
+        <br></br>
+        Romania
+        <br></br>
+        If you are a resident in the European Economic Area, the "data
+        controller" of your personal information is Fishing the net. You can
+        contact them directly regarding the processing of your information by
+        Fishing the net.
       </p>
     </AboutUsStyle>
   );

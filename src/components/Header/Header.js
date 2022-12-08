@@ -9,7 +9,7 @@ function Header({ handleFilter, ...props }) {
   const [title, setTitle] = useState("Our Blog");
 
   const handleChangeTitle = (path) => {
-    if (path === "about-us") setTitle("About Us");
+    if (path === "about-us") setTitle("Our Blog");
     if (path === "announcements") setTitle("Our Blog");
   };
 

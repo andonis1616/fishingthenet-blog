@@ -7,359 +7,111 @@ import { AnnouncementsStyle } from "./Announcements.style";
 const MOCK_DATA = [
   {
     id: 1,
-    title: "1 Lorem ipsum dolor sit amet, consectetur adipiscing",
+    title: "6 Common Phishing Attacks and How to Protect Against Them",
+    img: "/img1.png",
     content: `
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in elementum tellus. Mauris tincidunt purus id libero varius, id pellentesque leo bibendum. In suscipit urna eget turpis fermentum, sit amet finibus neque commodo.
+    Phishing attacks continue to play a dominant role in the digital threat landscape. In its 2021 Data Breach Investigations Report (DBIR), Verizon Enterprise found phishing to be one of the most prevalent action varieties for the data breaches it analyzed. Its researchers specifically observed phishing in more than a third (36%) of breaches. That’s up from 22% a year earlier. 
     </p>
     <p>
-      Phasellus dolor nulla, malesuada a eros vitae, pulvinar facilisis mi. Mauris rhoncus rutrum vestibulum. Pellentesque vestibulum ligula eget enim tristique, id sagittis neque commodo. Phasellus in elit velit. Etiam sodales dictum luctus.
+    Digital fraudsters show no signs of slowing down their phishing activity for the rest of the year, either. Help Net Security revealed that the volume of phishing attacks increased 22% compared to H1 2020. Of those campaigns, approximately half of them leveraged Office 365 as a lure and targeted accounts used for Single Sign On (SSO) at 51% and 45%, respectively. 
     </p>
     <p>
-      Nullam aliquam ultricies porta. Etiam a aliquam odio. Duis fermentum, nisi at ultricies aliquam, neque magna bibendum eros, quis feugiat odio enim sit amet leo. Aliquam cursus dolor at lacus consequat ornare non sit amet risus. Nulla facilisi. Curabitur vehicula libero at interdum tincidunt. Quisque vitae bibendum libero. Integer vitae tristique nunc. Duis rutrum lorem eget dapibus vulputate.
+    The rise of phishing attacks poses a significant threat to organizations everywhere. It’s important that all companies know how to spot some of the most common phishing scams if they are to protect their corporate information. It’s also crucial that they are familiar with some of the most common types of techniques that malicious actors use to pull off these scams. 
     </p>
     <p>
-      Donec sed mauris erat. Nam lobortis hendrerit neque. Nulla facilisi. Nulla tellus lorem, imperdiet vitae fringilla vel, lobortis et mi. Aliquam in accumsan arcu, quis tincidunt neque. Sed ligula lectus, posuere sed augue ac, mollis laoreet nulla. Praesent et tempor nibh.
+    Towards that end, let’s discuss six of the most common types of phishing attacks and highlight some tips that organizations can use to defend themselves. 
     </p>
-    <p>
-      In ullamcorper neque et enim tincidunt mollis. Aliquam sed sapien quis massa gravida tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse quam arcu, efficitur et nibh ac, convallis fringilla augue.
-    <p>
+    <ol>
+      <li>
+      Deceptive Phishing 
+      </li>
+
+          <li>
+          Spear Phishing 
+      </li>
+
+      <li>
+      Whaling
+      </li>
+
+      <li>
+      Vishing 
+      </li>
+      <li>
+      Smishing 
+
+      </li>
+      <li>
+      Pharming 
+
+      </li>
+  
+    </ol>
     `,
   },
   {
-    id: 2,
-    title: "2 Lorem ipsum dolor sit amet, consectetur adipiscing",
+    id: 1,
+    title: "What Is Phishing?",
+    img: "/img2.png",
     content: `
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in elementum tellus. Mauris tincidunt purus id libero varius, id pellentesque leo bibendum. In suscipit urna eget turpis fermentum, sit amet finibus neque commodo.
-    </p>
-    <p>
-      Phasellus dolor nulla, malesuada a eros vitae, pulvinar facilisis mi. Mauris rhoncus rutrum vestibulum. Pellentesque vestibulum ligula eget enim tristique, id sagittis neque commodo. Phasellus in elit velit. Etiam sodales dictum luctus.
-    </p>
-    <p>
-      Nullam aliquam ultricies porta. Etiam a aliquam odio. Duis fermentum, nisi at ultricies aliquam, neque magna bibendum eros, quis feugiat odio enim sit amet leo. Aliquam cursus dolor at lacus consequat ornare non sit amet risus. Nulla facilisi. Curabitur vehicula libero at interdum tincidunt. Quisque vitae bibendum libero. Integer vitae tristique nunc. Duis rutrum lorem eget dapibus vulputate.
-    </p>
-    <p>
-      Donec sed mauris erat. Nam lobortis hendrerit neque. Nulla facilisi. Nulla tellus lorem, imperdiet vitae fringilla vel, lobortis et mi. Aliquam in accumsan arcu, quis tincidunt neque. Sed ligula lectus, posuere sed augue ac, mollis laoreet nulla. Praesent et tempor nibh.
-    </p>
-    <p>
-      In ullamcorper neque et enim tincidunt mollis. Aliquam sed sapien quis massa gravida tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse quam arcu, efficitur et nibh ac, convallis fringilla augue.
-    <p>
-    `,
-  },
-  {
-    id: 3,
-    title: "3 Lorem ipsum dolor sit amet, consectetur adipiscing",
-    content: `
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in elementum tellus. Mauris tincidunt purus id libero varius, id pellentesque leo bibendum. In suscipit urna eget turpis fermentum, sit amet finibus neque commodo.
-    </p>
-    <p>
-      Phasellus dolor nulla, malesuada a eros vitae, pulvinar facilisis mi. Mauris rhoncus rutrum vestibulum. Pellentesque vestibulum ligula eget enim tristique, id sagittis neque commodo. Phasellus in elit velit. Etiam sodales dictum luctus.
-    </p>
-    <p>
-      Nullam aliquam ultricies porta. Etiam a aliquam odio. Duis fermentum, nisi at ultricies aliquam, neque magna bibendum eros, quis feugiat odio enim sit amet leo. Aliquam cursus dolor at lacus consequat ornare non sit amet risus. Nulla facilisi. Curabitur vehicula libero at interdum tincidunt. Quisque vitae bibendum libero. Integer vitae tristique nunc. Duis rutrum lorem eget dapibus vulputate.
-    </p>
-    <p>
-      Donec sed mauris erat. Nam lobortis hendrerit neque. Nulla facilisi. Nulla tellus lorem, imperdiet vitae fringilla vel, lobortis et mi. Aliquam in accumsan arcu, quis tincidunt neque. Sed ligula lectus, posuere sed augue ac, mollis laoreet nulla. Praesent et tempor nibh.
-    </p>
-    <p>
-      In ullamcorper neque et enim tincidunt mollis. Aliquam sed sapien quis massa gravida tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse quam arcu, efficitur et nibh ac, convallis fringilla augue.
-    <p>
-    `,
-  },
-  {
-    id: 4,
-    title: "4 Lorem ipsum dolor sit amet, consectetur adipiscing",
-    content: `
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in elementum tellus. Mauris tincidunt purus id libero varius, id pellentesque leo bibendum. In suscipit urna eget turpis fermentum, sit amet finibus neque commodo.
-    </p>
-    <p>
-      Phasellus dolor nulla, malesuada a eros vitae, pulvinar facilisis mi. Mauris rhoncus rutrum vestibulum. Pellentesque vestibulum ligula eget enim tristique, id sagittis neque commodo. Phasellus in elit velit. Etiam sodales dictum luctus.
-    </p>
-    <p>
-      Nullam aliquam ultricies porta. Etiam a aliquam odio. Duis fermentum, nisi at ultricies aliquam, neque magna bibendum eros, quis feugiat odio enim sit amet leo. Aliquam cursus dolor at lacus consequat ornare non sit amet risus. Nulla facilisi. Curabitur vehicula libero at interdum tincidunt. Quisque vitae bibendum libero. Integer vitae tristique nunc. Duis rutrum lorem eget dapibus vulputate.
-    </p>
-    <p>
-      Donec sed mauris erat. Nam lobortis hendrerit neque. Nulla facilisi. Nulla tellus lorem, imperdiet vitae fringilla vel, lobortis et mi. Aliquam in accumsan arcu, quis tincidunt neque. Sed ligula lectus, posuere sed augue ac, mollis laoreet nulla. Praesent et tempor nibh.
-    </p>
-    <p>
-      In ullamcorper neque et enim tincidunt mollis. Aliquam sed sapien quis massa gravida tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse quam arcu, efficitur et nibh ac, convallis fringilla augue.
-    <p>
-    `,
-  },
-  {
-    id: 5,
-    title: "5 Lorem ipsum dolor sit amet, consectetur adipiscing",
-    content: `
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in elementum tellus. Mauris tincidunt purus id libero varius, id pellentesque leo bibendum. In suscipit urna eget turpis fermentum, sit amet finibus neque commodo.
-    </p>
-    <p>
-      Phasellus dolor nulla, malesuada a eros vitae, pulvinar facilisis mi. Mauris rhoncus rutrum vestibulum. Pellentesque vestibulum ligula eget enim tristique, id sagittis neque commodo. Phasellus in elit velit. Etiam sodales dictum luctus.
-    </p>
-    <p>
-      Nullam aliquam ultricies porta. Etiam a aliquam odio. Duis fermentum, nisi at ultricies aliquam, neque magna bibendum eros, quis feugiat odio enim sit amet leo. Aliquam cursus dolor at lacus consequat ornare non sit amet risus. Nulla facilisi. Curabitur vehicula libero at interdum tincidunt. Quisque vitae bibendum libero. Integer vitae tristique nunc. Duis rutrum lorem eget dapibus vulputate.
-    </p>
-    <p>
-      Donec sed mauris erat. Nam lobortis hendrerit neque. Nulla facilisi. Nulla tellus lorem, imperdiet vitae fringilla vel, lobortis et mi. Aliquam in accumsan arcu, quis tincidunt neque. Sed ligula lectus, posuere sed augue ac, mollis laoreet nulla. Praesent et tempor nibh.
-    </p>
-    <p>
-      In ullamcorper neque et enim tincidunt mollis. Aliquam sed sapien quis massa gravida tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse quam arcu, efficitur et nibh ac, convallis fringilla augue.
-    <p>
-    `,
-  },
-  {
-    id: 6,
-    title: "6 Lorem ipsum dolor sit amet, consectetur adipiscing",
-    content: `
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in elementum tellus. Mauris tincidunt purus id libero varius, id pellentesque leo bibendum. In suscipit urna eget turpis fermentum, sit amet finibus neque commodo.
-    </p>
-    <p>
-      Phasellus dolor nulla, malesuada a eros vitae, pulvinar facilisis mi. Mauris rhoncus rutrum vestibulum. Pellentesque vestibulum ligula eget enim tristique, id sagittis neque commodo. Phasellus in elit velit. Etiam sodales dictum luctus.
-    </p>
-    <p>
-      Nullam aliquam ultricies porta. Etiam a aliquam odio. Duis fermentum, nisi at ultricies aliquam, neque magna bibendum eros, quis feugiat odio enim sit amet leo. Aliquam cursus dolor at lacus consequat ornare non sit amet risus. Nulla facilisi. Curabitur vehicula libero at interdum tincidunt. Quisque vitae bibendum libero. Integer vitae tristique nunc. Duis rutrum lorem eget dapibus vulputate.
-    </p>
-    <p>
-      Donec sed mauris erat. Nam lobortis hendrerit neque. Nulla facilisi. Nulla tellus lorem, imperdiet vitae fringilla vel, lobortis et mi. Aliquam in accumsan arcu, quis tincidunt neque. Sed ligula lectus, posuere sed augue ac, mollis laoreet nulla. Praesent et tempor nibh.
-    </p>
-    <p>
-      In ullamcorper neque et enim tincidunt mollis. Aliquam sed sapien quis massa gravida tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse quam arcu, efficitur et nibh ac, convallis fringilla augue.
-    <p>
-    `,
-  },
-  {
-    id: 7,
-    title: "7 sunt",
-    content: `
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in elementum tellus. Mauris tincidunt purus id libero varius, id pellentesque leo bibendum. In suscipit urna eget turpis fermentum, sit amet finibus neque commodo.
-    </p>
-    <p>
-      Phasellus dolor nulla, malesuada a eros vitae, pulvinar facilisis mi. Mauris rhoncus rutrum vestibulum. Pellentesque vestibulum ligula eget enim tristique, id sagittis neque commodo. Phasellus in elit velit. Etiam sodales dictum luctus.
-    </p>
-    <p>
-      Nullam aliquam ultricies porta. Etiam a aliquam odio. Duis fermentum, nisi at ultricies aliquam, neque magna bibendum eros, quis feugiat odio enim sit amet leo. Aliquam cursus dolor at lacus consequat ornare non sit amet risus. Nulla facilisi. Curabitur vehicula libero at interdum tincidunt. Quisque vitae bibendum libero. Integer vitae tristique nunc. Duis rutrum lorem eget dapibus vulputate.
-    </p>
-    <p>
-      Donec sed mauris erat. Nam lobortis hendrerit neque. Nulla facilisi. Nulla tellus lorem, imperdiet vitae fringilla vel, lobortis et mi. Aliquam in accumsan arcu, quis tincidunt neque. Sed ligula lectus, posuere sed augue ac, mollis laoreet nulla. Praesent et tempor nibh.
-    </p>
-    <p>
-      In ullamcorper neque et enim tincidunt mollis. Aliquam sed sapien quis massa gravida tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse quam arcu, efficitur et nibh ac, convallis fringilla augue.
-    <p>
-    `,
-  },
-  {
-    id: 8,
-    title: "8 sunt",
-    content: `
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in elementum tellus. Mauris tincidunt purus id libero varius, id pellentesque leo bibendum. In suscipit urna eget turpis fermentum, sit amet finibus neque commodo.
-    </p>
-    <p>
-      Phasellus dolor nulla, malesuada a eros vitae, pulvinar facilisis mi. Mauris rhoncus rutrum vestibulum. Pellentesque vestibulum ligula eget enim tristique, id sagittis neque commodo. Phasellus in elit velit. Etiam sodales dictum luctus.
-    </p>
-    <p>
-      Nullam aliquam ultricies porta. Etiam a aliquam odio. Duis fermentum, nisi at ultricies aliquam, neque magna bibendum eros, quis feugiat odio enim sit amet leo. Aliquam cursus dolor at lacus consequat ornare non sit amet risus. Nulla facilisi. Curabitur vehicula libero at interdum tincidunt. Quisque vitae bibendum libero. Integer vitae tristique nunc. Duis rutrum lorem eget dapibus vulputate.
-    </p>
-    <p>
-      Donec sed mauris erat. Nam lobortis hendrerit neque. Nulla facilisi. Nulla tellus lorem, imperdiet vitae fringilla vel, lobortis et mi. Aliquam in accumsan arcu, quis tincidunt neque. Sed ligula lectus, posuere sed augue ac, mollis laoreet nulla. Praesent et tempor nibh.
-    </p>
-    <p>
-      In ullamcorper neque et enim tincidunt mollis. Aliquam sed sapien quis massa gravida tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse quam arcu, efficitur et nibh ac, convallis fringilla augue.
-    <p>
-    `,
-  },
-  {
-    id: 9,
-    title: "9 sunt",
-    content: `
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in elementum tellus. Mauris tincidunt purus id libero varius, id pellentesque leo bibendum. In suscipit urna eget turpis fermentum, sit amet finibus neque commodo.
-    </p>
-    <p>
-      Phasellus dolor nulla, malesuada a eros vitae, pulvinar facilisis mi. Mauris rhoncus rutrum vestibulum. Pellentesque vestibulum ligula eget enim tristique, id sagittis neque commodo. Phasellus in elit velit. Etiam sodales dictum luctus.
-    </p>
-    <p>
-      Nullam aliquam ultricies porta. Etiam a aliquam odio. Duis fermentum, nisi at ultricies aliquam, neque magna bibendum eros, quis feugiat odio enim sit amet leo. Aliquam cursus dolor at lacus consequat ornare non sit amet risus. Nulla facilisi. Curabitur vehicula libero at interdum tincidunt. Quisque vitae bibendum libero. Integer vitae tristique nunc. Duis rutrum lorem eget dapibus vulputate.
-    </p>
-    <p>
-      Donec sed mauris erat. Nam lobortis hendrerit neque. Nulla facilisi. Nulla tellus lorem, imperdiet vitae fringilla vel, lobortis et mi. Aliquam in accumsan arcu, quis tincidunt neque. Sed ligula lectus, posuere sed augue ac, mollis laoreet nulla. Praesent et tempor nibh.
-    </p>
-    <p>
-      In ullamcorper neque et enim tincidunt mollis. Aliquam sed sapien quis massa gravida tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse quam arcu, efficitur et nibh ac, convallis fringilla augue.
-    <p>
-    `,
-  },
-  {
-    id: 10,
-    title: "10 sunt",
-    content: `
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in elementum tellus. Mauris tincidunt purus id libero varius, id pellentesque leo bibendum. In suscipit urna eget turpis fermentum, sit amet finibus neque commodo.
-    </p>
-    <p>
-      Phasellus dolor nulla, malesuada a eros vitae, pulvinar facilisis mi. Mauris rhoncus rutrum vestibulum. Pellentesque vestibulum ligula eget enim tristique, id sagittis neque commodo. Phasellus in elit velit. Etiam sodales dictum luctus.
-    </p>
-    <p>
-      Nullam aliquam ultricies porta. Etiam a aliquam odio. Duis fermentum, nisi at ultricies aliquam, neque magna bibendum eros, quis feugiat odio enim sit amet leo. Aliquam cursus dolor at lacus consequat ornare non sit amet risus. Nulla facilisi. Curabitur vehicula libero at interdum tincidunt. Quisque vitae bibendum libero. Integer vitae tristique nunc. Duis rutrum lorem eget dapibus vulputate.
-    </p>
-    <p>
-      Donec sed mauris erat. Nam lobortis hendrerit neque. Nulla facilisi. Nulla tellus lorem, imperdiet vitae fringilla vel, lobortis et mi. Aliquam in accumsan arcu, quis tincidunt neque. Sed ligula lectus, posuere sed augue ac, mollis laoreet nulla. Praesent et tempor nibh.
-    </p>
-    <p>
-      In ullamcorper neque et enim tincidunt mollis. Aliquam sed sapien quis massa gravida tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse quam arcu, efficitur et nibh ac, convallis fringilla augue.
-    <p>
-    `,
-  },
-  {
-    id: 11,
-    title: "11 sunt",
-    content: `
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in elementum tellus. Mauris tincidunt purus id libero varius, id pellentesque leo bibendum. In suscipit urna eget turpis fermentum, sit amet finibus neque commodo.
-    </p>
-    <p>
-      Phasellus dolor nulla, malesuada a eros vitae, pulvinar facilisis mi. Mauris rhoncus rutrum vestibulum. Pellentesque vestibulum ligula eget enim tristique, id sagittis neque commodo. Phasellus in elit velit. Etiam sodales dictum luctus.
-    </p>
-    <p>
-      Nullam aliquam ultricies porta. Etiam a aliquam odio. Duis fermentum, nisi at ultricies aliquam, neque magna bibendum eros, quis feugiat odio enim sit amet leo. Aliquam cursus dolor at lacus consequat ornare non sit amet risus. Nulla facilisi. Curabitur vehicula libero at interdum tincidunt. Quisque vitae bibendum libero. Integer vitae tristique nunc. Duis rutrum lorem eget dapibus vulputate.
-    </p>
-    <p>
-      Donec sed mauris erat. Nam lobortis hendrerit neque. Nulla facilisi. Nulla tellus lorem, imperdiet vitae fringilla vel, lobortis et mi. Aliquam in accumsan arcu, quis tincidunt neque. Sed ligula lectus, posuere sed augue ac, mollis laoreet nulla. Praesent et tempor nibh.
-    </p>
-    <p>
-      In ullamcorper neque et enim tincidunt mollis. Aliquam sed sapien quis massa gravida tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse quam arcu, efficitur et nibh ac, convallis fringilla augue.
-    <p>
-    `,
-  },
-  {
-    id: 12,
-    title: "12 sunt",
-    content: `
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in elementum tellus. Mauris tincidunt purus id libero varius, id pellentesque leo bibendum. In suscipit urna eget turpis fermentum, sit amet finibus neque commodo.
-    </p>
-    <p>
-      Phasellus dolor nulla, malesuada a eros vitae, pulvinar facilisis mi. Mauris rhoncus rutrum vestibulum. Pellentesque vestibulum ligula eget enim tristique, id sagittis neque commodo. Phasellus in elit velit. Etiam sodales dictum luctus.
-    </p>
-    <p>
-      Nullam aliquam ultricies porta. Etiam a aliquam odio. Duis fermentum, nisi at ultricies aliquam, neque magna bibendum eros, quis feugiat odio enim sit amet leo. Aliquam cursus dolor at lacus consequat ornare non sit amet risus. Nulla facilisi. Curabitur vehicula libero at interdum tincidunt. Quisque vitae bibendum libero. Integer vitae tristique nunc. Duis rutrum lorem eget dapibus vulputate.
-    </p>
-    <p>
-      Donec sed mauris erat. Nam lobortis hendrerit neque. Nulla facilisi. Nulla tellus lorem, imperdiet vitae fringilla vel, lobortis et mi. Aliquam in accumsan arcu, quis tincidunt neque. Sed ligula lectus, posuere sed augue ac, mollis laoreet nulla. Praesent et tempor nibh.
-    </p>
-    <p>
-      In ullamcorper neque et enim tincidunt mollis. Aliquam sed sapien quis massa gravida tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse quam arcu, efficitur et nibh ac, convallis fringilla augue.
-    <p>
-    `,
-  },
-  {
-    id: 13,
-    title: "13 sunt",
-    content: `
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in elementum tellus. Mauris tincidunt purus id libero varius, id pellentesque leo bibendum. In suscipit urna eget turpis fermentum, sit amet finibus neque commodo.
-    </p>
-    <p>
-      Phasellus dolor nulla, malesuada a eros vitae, pulvinar facilisis mi. Mauris rhoncus rutrum vestibulum. Pellentesque vestibulum ligula eget enim tristique, id sagittis neque commodo. Phasellus in elit velit. Etiam sodales dictum luctus.
-    </p>
-    <p>
-      Nullam aliquam ultricies porta. Etiam a aliquam odio. Duis fermentum, nisi at ultricies aliquam, neque magna bibendum eros, quis feugiat odio enim sit amet leo. Aliquam cursus dolor at lacus consequat ornare non sit amet risus. Nulla facilisi. Curabitur vehicula libero at interdum tincidunt. Quisque vitae bibendum libero. Integer vitae tristique nunc. Duis rutrum lorem eget dapibus vulputate.
-    </p>
-    <p>
-      Donec sed mauris erat. Nam lobortis hendrerit neque. Nulla facilisi. Nulla tellus lorem, imperdiet vitae fringilla vel, lobortis et mi. Aliquam in accumsan arcu, quis tincidunt neque. Sed ligula lectus, posuere sed augue ac, mollis laoreet nulla. Praesent et tempor nibh.
-    </p>
-    <p>
-      In ullamcorper neque et enim tincidunt mollis. Aliquam sed sapien quis massa gravida tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse quam arcu, efficitur et nibh ac, convallis fringilla augue.
-    <p>
-    `,
-  },
-  {
-    id: 14,
-    title: "14 sunt",
-    content: `
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in elementum tellus. Mauris tincidunt purus id libero varius, id pellentesque leo bibendum. In suscipit urna eget turpis fermentum, sit amet finibus neque commodo.
-    </p>
-    <p>
-      Phasellus dolor nulla, malesuada a eros vitae, pulvinar facilisis mi. Mauris rhoncus rutrum vestibulum. Pellentesque vestibulum ligula eget enim tristique, id sagittis neque commodo. Phasellus in elit velit. Etiam sodales dictum luctus.
-    </p>
-    <p>
-      Nullam aliquam ultricies porta. Etiam a aliquam odio. Duis fermentum, nisi at ultricies aliquam, neque magna bibendum eros, quis feugiat odio enim sit amet leo. Aliquam cursus dolor at lacus consequat ornare non sit amet risus. Nulla facilisi. Curabitur vehicula libero at interdum tincidunt. Quisque vitae bibendum libero. Integer vitae tristique nunc. Duis rutrum lorem eget dapibus vulputate.
-    </p>
-    <p>
-      Donec sed mauris erat. Nam lobortis hendrerit neque. Nulla facilisi. Nulla tellus lorem, imperdiet vitae fringilla vel, lobortis et mi. Aliquam in accumsan arcu, quis tincidunt neque. Sed ligula lectus, posuere sed augue ac, mollis laoreet nulla. Praesent et tempor nibh.
-    </p>
-    <p>
-      In ullamcorper neque et enim tincidunt mollis. Aliquam sed sapien quis massa gravida tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse quam arcu, efficitur et nibh ac, convallis fringilla augue.
-    <p>
-    `,
-  },
-  {
-    id: 15,
-    title: "15 sunt",
-    content: `
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in elementum tellus. Mauris tincidunt purus id libero varius, id pellentesque leo bibendum. In suscipit urna eget turpis fermentum, sit amet finibus neque commodo.
-    </p>
-    <p>
-      Phasellus dolor nulla, malesuada a eros vitae, pulvinar facilisis mi. Mauris rhoncus rutrum vestibulum. Pellentesque vestibulum ligula eget enim tristique, id sagittis neque commodo. Phasellus in elit velit. Etiam sodales dictum luctus.
-    </p>
-    <p>
-      Nullam aliquam ultricies porta. Etiam a aliquam odio. Duis fermentum, nisi at ultricies aliquam, neque magna bibendum eros, quis feugiat odio enim sit amet leo. Aliquam cursus dolor at lacus consequat ornare non sit amet risus. Nulla facilisi. Curabitur vehicula libero at interdum tincidunt. Quisque vitae bibendum libero. Integer vitae tristique nunc. Duis rutrum lorem eget dapibus vulputate.
-    </p>
-    <p>
-      Donec sed mauris erat. Nam lobortis hendrerit neque. Nulla facilisi. Nulla tellus lorem, imperdiet vitae fringilla vel, lobortis et mi. Aliquam in accumsan arcu, quis tincidunt neque. Sed ligula lectus, posuere sed augue ac, mollis laoreet nulla. Praesent et tempor nibh.
-    </p>
-    <p>
-      In ullamcorper neque et enim tincidunt mollis. Aliquam sed sapien quis massa gravida tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse quam arcu, efficitur et nibh ac, convallis fringilla augue.
-    <p>
-    `,
-  },
-  {
-    id: 16,
-    title: "16 sunt",
-    content: `
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in elementum tellus. Mauris tincidunt purus id libero varius, id pellentesque leo bibendum. In suscipit urna eget turpis fermentum, sit amet finibus neque commodo.
-    </p>
-    <p>
-      Phasellus dolor nulla, malesuada a eros vitae, pulvinar facilisis mi. Mauris rhoncus rutrum vestibulum. Pellentesque vestibulum ligula eget enim tristique, id sagittis neque commodo. Phasellus in elit velit. Etiam sodales dictum luctus.
-    </p>
-    <p>
-      Nullam aliquam ultricies porta. Etiam a aliquam odio. Duis fermentum, nisi at ultricies aliquam, neque magna bibendum eros, quis feugiat odio enim sit amet leo. Aliquam cursus dolor at lacus consequat ornare non sit amet risus. Nulla facilisi. Curabitur vehicula libero at interdum tincidunt. Quisque vitae bibendum libero. Integer vitae tristique nunc. Duis rutrum lorem eget dapibus vulputate.
-    </p>
-    <p>
-      Donec sed mauris erat. Nam lobortis hendrerit neque. Nulla facilisi. Nulla tellus lorem, imperdiet vitae fringilla vel, lobortis et mi. Aliquam in accumsan arcu, quis tincidunt neque. Sed ligula lectus, posuere sed augue ac, mollis laoreet nulla. Praesent et tempor nibh.
-    </p>
-    <p>
-      In ullamcorper neque et enim tincidunt mollis. Aliquam sed sapien quis massa gravida tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse quam arcu, efficitur et nibh ac, convallis fringilla augue.
-    <p>
-    `,
-  },
-  {
-    id: 17,
-    title: "17 sunt",
-    content: `
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in elementum tellus. Mauris tincidunt purus id libero varius, id pellentesque leo bibendum. In suscipit urna eget turpis fermentum, sit amet finibus neque commodo.
-    </p>
-    <p>
-      Phasellus dolor nulla, malesuada a eros vitae, pulvinar facilisis mi. Mauris rhoncus rutrum vestibulum. Pellentesque vestibulum ligula eget enim tristique, id sagittis neque commodo. Phasellus in elit velit. Etiam sodales dictum luctus.
-    </p>
-    <p>
-      Nullam aliquam ultricies porta. Etiam a aliquam odio. Duis fermentum, nisi at ultricies aliquam, neque magna bibendum eros, quis feugiat odio enim sit amet leo. Aliquam cursus dolor at lacus consequat ornare non sit amet risus. Nulla facilisi. Curabitur vehicula libero at interdum tincidunt. Quisque vitae bibendum libero. Integer vitae tristique nunc. Duis rutrum lorem eget dapibus vulputate.
-    </p>
-    <p>
-      Donec sed mauris erat. Nam lobortis hendrerit neque. Nulla facilisi. Nulla tellus lorem, imperdiet vitae fringilla vel, lobortis et mi. Aliquam in accumsan arcu, quis tincidunt neque. Sed ligula lectus, posuere sed augue ac, mollis laoreet nulla. Praesent et tempor nibh.
-    </p>
-    <p>
-      In ullamcorper neque et enim tincidunt mollis. Aliquam sed sapien quis massa gravida tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse quam arcu, efficitur et nibh ac, convallis fringilla augue.
-    <p>
+    <p>Phishing attacks are the practice of sending fraudulent communications that appear to come from a reputable source. It is usually performed through email. The goal is to steal sensitive data like credit card and login information or to install malware on the victim's machine. Phishing is a common type of cyber attack that everyone should learn about in order to protect against email threats. 
+    </p>
+
+<h4>
+What is phishing? 
+</h4>
+
+    <p>Phishing attacks are counterfeit communications that appear to come from a trustworthy source but w What is phishing? 
+    </p>
+
+    <p>Phishing attacks are counterfeit communications that appear to come from a trustworthy source but which can compromise all types of data sources. Attacks can facilitate access to your online accounts and personal data, obtain permissions to modify and compromise connected systems--such as point of sale terminals and order processing systems--and in some cases hijack entire computer networks until a ransom fee is delivered. 
+    </p>
+
+    <p>Sometimes hackers are satisfied with getting your personal data and credit card information for financial gain. In other cases, phishing emails are sent to gather employee login information or other details for use in more malicious attacks against a few individuals or a specific company. Phishing is a type of cyber attack that everyone should learn about in order to protect themselves and ensure email security throughout an organization. 
+    </p>
+
+    <h4>How does phishing work? </h4>
+
+ 
+    <p>
+    Phishing starts with a fraudulent email or other communication designed to lure a victim. The message is made to look as though it comes from a trusted sender. If it fools the victim, he or she is coaxed into providing confidential information--often on a scam website. Sometimes malware is also downloaded onto the target's computer. 
+    </p> 
+    <p>
+    Cybercriminals start by identifying a group of individuals they want to target. Then they create email and text messages that appear to be legitimate but actually contain dangerous links, attachments, or lures that trick their targets into taking an unknown, risky action. In brief: 
+    </p> 
+    <p>
+    Phishers frequently use emotions like fear, curiosity, urgency, and greed to compel recipients to open attachments or click on links. 
+    </p> 
+    <p>
+    Phishing attacks are designed to appear to come from legitimate companies and individuals. 
+    </p> 
+    <p>
+    Cybercriminals are continuously innovating and becoming more and more sophisticated. 
+    </p> 
+    <p>
+    It only takes one successful phishing attack to compromise your network and steal your data, which is why it is always important to Think Before You Click.hich can compromise all types of data sources. Attacks can facilitate access to your online accounts and personal data, obtain permissions to modify and compromise connected systems--such as point of sale terminals and order processing systems--and in some cases hijack entire computer networks until a ransom fee is delivered. 
+    </p> 
+    <p>
+    Sometimes hackers are satisfied with getting your personal data and credit card information for financial gain. In other cases, phishing emails are sent to gather employee login information or other details for use in more malicious attacks against a few individuals or a specific company. Phishing is a type of cyber attack that everyone should learn about in order to protect themselves and ensure email security throughout an organization. 
+    </p> 
+    <h4>How does phishing work? </h4>
+    <p>
+    Phishing starts with a fraudulent email or other communication designed to lure a victim. The message is made to look as though it comes from a trusted sender. If it fools the victim, he or she is coaxed into providing confidential information--often on a scam website. Sometimes malware is also downloaded onto the target's computer. 
+    </p> 
+    <p>
+    Cybercriminals start by identifying a group of individuals they want to target. Then they create email and text messages that appear to be legitimate but actually contain dangerous links, attachments, or lures that trick their targets into taking an unknown, risky action. In brief: 
+    </p>
+    <ol>
+    <li>Phishers frequently use emotions like fear, curiosity, urgency, and greed to compel recipients to open attachments or click on links. 
+    </li>
+    <li>Phishing attacks are designed to appear to come from legitimate companies and individuals. 
+    </li>
+    <li>Cybercriminals are continuously innovating and becoming more and more sophisticated. 
+    </li>
+    <li>It only takes one successful phishing attack to compromise your network and steal your data, which is why it is always important to Think Before You Click. 
+    </li>
+    </ol>
     `,
   },
 ];
@@ -459,15 +211,15 @@ function Announcements({
 
       <div className="announcements-container">
         {currentItems.map((item, index) => (
-          <Link key={index} to={`/announcements/${item.id}`} state={item}>
+          <Link
+            key={index}
+            to={`/announcements/${item.id}`}
+            state={item}
+            style={{ textDecoration: "none" }}
+          >
             <div className="announcements-card">
               <div className="announcements-card-image">
-                <img
-                  width={300}
-                  height={200}
-                  src="https://img.freepik.com/premium-photo/astronaut-outer-open-space-planet-earth-stars-provide-background-erforming-space-planet-earth-sunrise-sunset-our-home-iss-elements-this-image-furnished-by-nasa_150455-16829.jpg?w=996"
-                  alt="image card"
-                />
+                <img width={300} height={200} src={item.img} alt="image card" />
               </div>
               <div className="announcements-card-tag">HOW TO</div>
               <div className="announcements-card-title">{item.title}</div>

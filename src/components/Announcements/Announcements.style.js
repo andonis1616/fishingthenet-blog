@@ -58,6 +58,7 @@ export const AnnouncementsStyle = styled.div`
 
   .announcements-card-title {
     font-family: "Montserrat";
+    text-decoration: none;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
